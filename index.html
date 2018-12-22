@@ -1,0 +1,1034 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="pingback" href="http://math2it.com/xmlrpc.php">
+<title>MMMM | Bài tập lớn nhập môn điện toán </title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://math2it.com/thu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex/" />
+<link rel="publisher" href="https://plus.google.com/u/0/+Math2itblogspot"/>
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Math2IT | Thủ thuật hay cho người viết luận văn và sách bằng LaTeX" />
+<meta property="og:description" content="Thủ thuật này giúp các bạn soạn thảo tài liệu lớn bằng LaTeX quản lý và biên dịch tài liệu nhanh hơn. Để có thể chia các chương ra thành nhiều file nhỏ để dễ quản lý thay vì đặt tất cả chung trong một file chính (tạm gọi là main.tex), bạn vui lòng xem &hellip;" />
+<meta property="og:url" content="http://math2it.com/thu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex/" />
+<meta property="og:site_name" content="Math2IT" />
+<meta property="article:publisher" content="https://www.facebook.com/math2it" />
+<meta property="article:author" content="https://www.facebook.com/Math2IT/" />
+<meta property="article:tag" content="latex" />
+<meta property="article:tag" content="thủ thuật latex" />
+<meta property="article:tag" content="tự học latex" />
+<meta property="article:section" content="LaTeX" />
+<meta property="article:published_time" content="2018-04-04T15:45:00+00:00" />
+<meta property="article:modified_time" content="2018-04-04T22:42:42+00:00" />
+<meta property="og:updated_time" content="2018-04-04T22:42:42+00:00" />
+<meta property="fb:app_id" content="463571664000062" />
+<meta property="og:image" content="http://math2it.com/wp-content/uploads/2018/04/pexels-photo-272980.jpeg" />
+<meta property="og:image:width" content="2265" />
+<meta property="og:image:height" content="1500" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Thủ thuật này giúp các bạn soạn thảo tài liệu lớn bằng LaTeX quản lý và biên dịch tài liệu nhanh hơn. Để có thể chia các chương ra thành nhiều file nhỏ để dễ quản lý thay vì đặt tất cả chung trong một file chính (tạm gọi là main.tex), bạn vui lòng xem [&hellip;]" />
+<meta name="twitter:title" content="Math2IT | Thủ thuật hay cho người viết luận văn và sách bằng LaTeX" />
+<meta name="twitter:image" content="http://math2it.com/wp-content/uploads/2018/04/pexels-photo-272980.jpeg" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/math2it.com\/","name":"Math2IT","potentialAction":{"@type":"SearchAction","target":"http:\/\/math2it.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"http:\/\/math2it.com\/thu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex\/","sameAs":["https:\/\/www.facebook.com\/math2it","https:\/\/plus.google.com\/u\/0\/+Math2itblogspot","https:\/\/www.youtube.com\/user\/math2it"],"@id":"#organization","name":"Math2IT","logo":"http:\/\/math2it.com\/wp-content\/uploads\/2016\/05\/avatarDefault.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Math2IT &raquo;" href="http://math2it.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Math2IT &raquo;" href="http://math2it.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Math2IT &raquo; Thủ thuật hay cho người viết luận văn và sách bằng LaTeX Dòng phản hồi" href="http://math2it.com/thu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/math2it.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-quicklatex-format-group-css' href='http://math2it.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/wp-quicklatex/css/quicklatex-format.css,wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css,wp-content/plugins/crayon-syntax-highlighter/themes/1c-kod/1c-kod.css,wp-content/plugins/crayon-syntax-highlighter/fonts/courier-new.css,wp-includes/css/dist/block-library/style.min.css,wp-content/plugins/contact-form-7/includes/css/styles.css,wp-content/plugins/organize-series/orgSeries.css,wp-content/plugins/table-of-contents-plus/screen.min.css,wp-content/themes/herald/assets/css/min.css' type='text/css' media='all' />
+<style id='herald-main-inline-css' type='text/css'>
+.herald-site-header .header-top,.header-top .herald-in-popup,.header-top .herald-menu ul{background: #111111;color: #aaaaaa;}.header-top a{color: #aaaaaa;}.header-top a:hover,.header-top .herald-menu li:hover > a{color: #ffffff;}.header-top .herald-menu-popup:hover > span,.header-top .herald-menu-popup-search span:hover,.header-top .herald-menu-popup-search.herald-search-active{color: #ffffff;}#wp-calendar tbody td a{background: #0288d1;color:#FFF;}.header-middle {background-repeat:repeat-x;background-image:url('http://demo.mekshq.com/herald/wp-content/uploads/2015/11/shadow_bgnd.png');}.header-middle{background-color: #0277bd;color: #ffffff;}.header-middle a{color: #ffffff;}.header-middle.herald-header-wraper,.header-middle .col-lg-12{height: 120px;}.header-middle .site-title img{max-height: 120px;}.header-middle .sub-menu{background-color: #ffffff;}.header-middle .sub-menu a,.header-middle .herald-search-submit:hover,.header-middle li.herald-mega-menu .col-lg-3 a:hover,.header-middle li.herald-mega-menu .col-lg-3 a:hover:after{color: #111111;}.header-middle .herald-menu li:hover > a,.header-middle .herald-menu-popup-search:hover > span{color: #111111;background-color: #ffffff;}.header-middle .current-menu-parent a,.header-middle .current-menu-ancestor a,.header-middle .current_page_item > a,.header-middle .current-menu-item > a{background-color: rgba(255,255,255,0.2); }.header-middle .sub-menu > li > a,.header-middle .herald-search-submit,.header-middle li.herald-mega-menu .col-lg-3 a{color: rgba(17,17,17,0.7); }.header-middle .sub-menu > li:hover > a{color: #111111; }.header-middle .herald-in-popup{background-color: #ffffff;}.header-middle .herald-menu-popup a{color: #111111;}.header-middle .herald-in-popup{background-color: #ffffff;}.header-middle .herald-search-input{color: #111111;}.header-middle .herald-menu-popup a{color: #111111;}.header-middle .herald-menu-popup > span,.header-middle .herald-search-active > span{color: #ffffff;}.header-middle .herald-menu-popup:hover > span,.header-middle .herald-search-active > span{background-color: #ffffff;color: #111111;}.header-bottom{background: #0288d1;color: #ffffff;}.header-bottom a,.header-bottom .herald-site-header .herald-search-submit{color: #ffffff;}.header-bottom a:hover{color: #424242;}.header-bottom a:hover,.header-bottom .herald-menu li:hover > a,.header-bottom li.herald-mega-menu .col-lg-3 a:hover:after{color: #424242;}.header-bottom .herald-menu li:hover > a,.header-bottom .herald-menu-popup-search:hover > span{color: #424242;background-color: #ffffff;}.header-bottom .current-menu-parent a,.header-bottom .current-menu-ancestor a,.header-bottom .current_page_item > a,.header-bottom .current-menu-item > a {background-color: rgba(255,255,255,0.2); }.header-bottom .sub-menu{background-color: #ffffff;}.header-bottom .herald-menu li.herald-mega-menu .col-lg-3 a,.header-bottom .sub-menu > li > a,.header-bottom .herald-search-submit{color: rgba(66,66,66,0.7); }.header-bottom .herald-menu li.herald-mega-menu .col-lg-3 a:hover,.header-bottom .sub-menu > li:hover > a{color: #424242; }.header-bottom .sub-menu > li > a,.header-bottom .herald-search-submit{color: rgba(66,66,66,0.7); }.header-bottom .sub-menu > li:hover > a{color: #424242; }.header-bottom .herald-in-popup{background-color: #ffffff;}.header-bottom .herald-menu-popup a{color: #424242;}.header-bottom .herald-in-popup,.header-bottom .herald-search-input{background-color: #ffffff;}.header-bottom .herald-menu-popup a,.header-bottom .herald-search-input{color: #424242;}.header-bottom .herald-menu-popup > span,.header-bottom .herald-search-active > span{color: #ffffff;}.header-bottom .herald-menu-popup:hover > span,.header-bottom .herald-search-active > span{background-color: #ffffff;color: #424242;}.herald-header-sticky{background: #0288d1;color: #ffffff;}.herald-header-sticky a{color: #ffffff;}.herald-header-sticky .herald-menu li:hover > a{color: #444444;background-color: #ffffff;}.herald-header-sticky .sub-menu{background-color: #ffffff;}.herald-header-sticky .sub-menu a{color: #444444;}.herald-header-sticky .sub-menu > li:hover > a{color: #0288d1;}.herald-header-sticky .herald-in-popup,.herald-header-sticky .herald-search-input{background-color: #ffffff;}.herald-header-sticky .herald-menu-popup a{color: #444444;}.herald-header-sticky .herald-menu-popup > span,.herald-header-sticky .herald-search-active > span{color: #ffffff;}.herald-header-sticky .herald-menu-popup:hover > span,.herald-header-sticky .herald-search-active > span{background-color: #ffffff;color: #444444;}.herald-header-sticky .herald-search-input,.herald-header-sticky .herald-search-submit{color: #444444;}.herald-header-sticky .herald-menu li:hover > a,.herald-header-sticky .herald-menu-popup-search:hover > span{color: #444444;background-color: #ffffff;}.header-trending{background: #eeeeee;color: #666666;}.header-trending a{color: #666666;}.header-trending a:hover{color: #111111;}body { background-color: #ffffff;color: #444444;font-family: 'Maven Pro';font-weight: 400;}.herald-site-content{background-color:#ffffff;}h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6, .h7{font-family: 'Maven Pro';font-weight: 500;}.header-middle .herald-menu,.header-bottom .herald-menu,.herald-header-sticky .herald-menu,.herald-mobile-nav{font-family: 'Maven Pro';font-weight: 500;}.herald-menu li.herald-mega-menu .herald-ovrld .meta-category a{font-family: 'Maven Pro';font-weight: 400;}.herald-entry-content blockquote p{color: #0288d1;}pre {background: rgba(68,68,68,0.06);border: 1px solid rgba(68,68,68,0.2);}thead {background: rgba(68,68,68,0.06);}a,.entry-title a:hover,.herald-menu .sub-menu li .meta-category a{color: #0288d1;}.entry-meta-wrapper .entry-meta span:before,.entry-meta-wrapper .entry-meta a:before,.entry-meta-wrapper .entry-meta .meta-item:before,.entry-meta-wrapper .entry-meta div,li.herald-mega-menu .sub-menu .entry-title a,.entry-meta-wrapper .herald-author-twitter{color: #444444;}.herald-mod-title h1,.herald-mod-title h2,.herald-mod-title h4{color: #ffffff;}.herald-mod-head:after,.herald-mod-title .herald-color,.widget-title:after,.widget-title span{color: #ffffff;background-color: #333333;}.herald-mod-title .herald-color a{color: #ffffff;}.herald-ovrld .meta-category a,.herald-fa-wrapper .meta-category a{background-color: #0288d1;}.meta-tags a,.widget_tag_cloud a,.herald-share-meta:after{background: rgba(51,51,51,0.1);}h1, h2, h3, h4, h5, h6,.entry-title a {color: #333333;}.herald-pagination .page-numbers,.herald-mod-subnav a,.herald-mod-actions a,.herald-slider-controls div,.meta-tags a,.widget.widget_tag_cloud a,.herald-sidebar .mks_autor_link_wrap a,.mks_themeforest_widget .mks_read_more a,.herald-read-more{color: #444444;}.widget.widget_tag_cloud a:hover,.entry-content .meta-tags a:hover{background-color: #0288d1;color: #FFF;}.herald-pagination .prev.page-numbers,.herald-pagination .next.page-numbers,.herald-pagination .prev.page-numbers:hover,.herald-pagination .next.page-numbers:hover,.herald-pagination .page-numbers.current,.herald-pagination .page-numbers.current:hover,.herald-next a,.herald-pagination .herald-next a:hover,.herald-prev a,.herald-pagination .herald-prev a:hover,.herald-load-more a,.herald-load-more a:hover,.entry-content .herald-search-submit,.herald-mod-desc .herald-search-submit,.wpcf7-submit{background-color:#0288d1;color: #FFF;}.herald-pagination .page-numbers:hover{background-color: rgba(68,68,68,0.1);}.widget a,.recentcomments a,.widget a:hover,.herald-sticky-next a:hover,.herald-sticky-prev a:hover,.herald-mod-subnav a:hover,.herald-mod-actions a:hover,.herald-slider-controls div:hover,.meta-tags a:hover,.widget_tag_cloud a:hover,.mks_autor_link_wrap a:hover,.mks_themeforest_widget .mks_read_more a:hover,.herald-read-more:hover,.widget .entry-title a:hover,li.herald-mega-menu .sub-menu .entry-title a:hover,.entry-meta-wrapper .meta-item:hover a,.entry-meta-wrapper .meta-item:hover a:before,.entry-meta-wrapper .herald-share:hover > span,.entry-meta-wrapper .herald-author-name:hover,.entry-meta-wrapper .herald-author-twitter:hover,.entry-meta-wrapper .herald-author-twitter:hover:before{color:#0288d1;}.widget ul li a,.widget .entry-title a,.herald-author-name,.entry-meta-wrapper .meta-item,.entry-meta-wrapper .meta-item span,.entry-meta-wrapper .meta-item a,.herald-mod-actions a{color: #444444;}.widget li:before{background: rgba(68,68,68,0.3);}.widget_categories .count{background: #0288d1;color: #FFF;}input[type="submit"],.spinner > div{background-color: #0288d1;}.herald-mod-actions a:hover,.comment-body .edit-link a,.herald-breadcrumbs a:hover{color:#0288d1;}.herald-header-wraper .herald-soc-nav a:hover,.meta-tags span,li.herald-mega-menu .herald-ovrld .entry-title a,li.herald-mega-menu .herald-ovrld .entry-title a:hover,.herald-ovrld .entry-meta .herald-reviews i:before{color: #FFF;}.entry-meta .meta-item, .entry-meta span, .entry-meta a,.meta-category span,.post-date,.recentcomments,.rss-date,.comment-metadata a,.entry-meta a:hover,.herald-menu li.herald-mega-menu .col-lg-3 a:after,.herald-breadcrumbs,.herald-breadcrumbs a,.entry-meta .herald-reviews i:before{color: #999999;}.herald-lay-a .herald-lay-over{background: #ffffff;}.herald-pagination a:hover,input[type="submit"]:hover,.entry-content .herald-search-submit:hover,.wpcf7-submit:hover,.herald-fa-wrapper .meta-category a:hover,.herald-ovrld .meta-category a:hover,.herald-mod-desc .herald-search-submit:hover,.herald-single-sticky .herald-share li a:hover{cursor: pointer;text-decoration: none;background-image: -moz-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(0,0,0,0.1)),color-stop(100%,rgba(0,0,0,0.1)));background-image: -webkit-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -o-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -ms-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: linear-gradient(to right,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);}.herald-sticky-next a,.herald-sticky-prev a{color: #444444;}.herald-sticky-prev a:before,.herald-sticky-next a:before,.herald-comment-action,.meta-tags span,.herald-entry-content .herald-link-pages a{background: #444444;}.herald-sticky-prev a:hover:before,.herald-sticky-next a:hover:before,.herald-comment-action:hover,div.mejs-controls .mejs-time-rail .mejs-time-current,.herald-entry-content .herald-link-pages a:hover{background: #0288d1;} .herald-site-footer{background: #222222;color: #dddddd;}.herald-site-footer .widget-title span{color: #dddddd;background: transparent;}.herald-site-footer .widget-title:before{background:#dddddd;}.herald-site-footer .widget-title:after,.herald-site-footer .widget_tag_cloud a{background: rgba(221,221,221,0.1);}.herald-site-footer .widget li:before{background: rgba(221,221,221,0.3);}.herald-site-footer a,.herald-site-footer .widget a:hover,.herald-site-footer .widget .meta-category a,.herald-site-footer .herald-slider-controls .owl-prev:hover,.herald-site-footer .herald-slider-controls .owl-next:hover,.herald-site-footer .herald-slider-controls .herald-mod-actions:hover{color: #0288d1;}.herald-site-footer .widget a,.herald-site-footer .mks_author_widget h3{color: #dddddd;}.herald-site-footer .entry-meta .meta-item, .herald-site-footer .entry-meta span, .herald-site-footer .entry-meta a, .herald-site-footer .meta-category span, .herald-site-footer .post-date, .herald-site-footer .recentcomments, .herald-site-footer .rss-date, .herald-site-footer .comment-metadata a{color: #aaaaaa;}.herald-site-footer .mks_author_widget .mks_autor_link_wrap a, .herald-site-footer.mks_read_more a, .herald-site-footer .herald-read-more,.herald-site-footer .herald-slider-controls .owl-prev, .herald-site-footer .herald-slider-controls .owl-next, .herald-site-footer .herald-mod-wrap .herald-mod-actions a{border-color: rgba(221,221,221,0.2);}.herald-site-footer .mks_author_widget .mks_autor_link_wrap a:hover, .herald-site-footer.mks_read_more a:hover, .herald-site-footer .herald-read-more:hover,.herald-site-footer .herald-slider-controls .owl-prev:hover, .herald-site-footer .herald-slider-controls .owl-next:hover, .herald-site-footer .herald-mod-wrap .herald-mod-actions a:hover{border-color: rgba(2,136,209,0.5);}.herald-site-footer .widget_search .herald-search-input{color: #222222;}.herald-site-footer .widget_tag_cloud a:hover{background:#0288d1;color:#FFF;}.footer-bottom a{color:#dddddd;}.footer-bottom a:hover,.footer-bottom .herald-copyright a{color:#0288d1;}.footer-bottom .herald-menu li:hover > a{color: #0288d1;}.footer-bottom .sub-menu{background-color: rgba(0,0,0,0.5);} .herald-pagination{border-top: 1px solid rgba(51,51,51,0.1);}.entry-content a:hover,.comment-respond a:hover,.comment-reply-link:hover{border-bottom: 2px solid #0288d1;}.footer-bottom .herald-copyright a:hover{border-bottom: 2px solid #0288d1;}.herald-slider-controls .owl-prev,.herald-slider-controls .owl-next,.herald-mod-wrap .herald-mod-actions a{border: 1px solid rgba(68,68,68,0.2);}.herald-slider-controls .owl-prev:hover,.herald-slider-controls .owl-next:hover,.herald-mod-wrap .herald-mod-actions a:hover,.herald-author .herald-socials-actions .herald-mod-actions a:hover {border-color: rgba(2,136,209,0.5);}.herald-pagination,.herald-link-pages,#wp-calendar thead th,#wp-calendar tbody td,#wp-calendar tbody td:last-child{border-color: rgba(68,68,68,0.1);}.herald-lay-h:after,.herald-site-content .herald-related .herald-lay-h:after,.herald-lay-e:after,.herald-site-content .herald-related .herald-lay-e:after,.herald-lay-j:after,.herald-site-content .herald-related .herald-lay-j:after,.herald-lay-l:after,.herald-site-content .herald-related .herald-lay-l:after {background-color: rgba(68,68,68,0.1);}input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="date"], input[type="password"], select, textarea,.herald-single-sticky,td,th,table,.mks_author_widget .mks_autor_link_wrap a,.mks_read_more a,.herald-read-more{border-color: rgba(68,68,68,0.2);}.entry-content .herald-search-input,.herald-fake-button,input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="password"]:focus, textarea:focus{border-color: rgba(68,68,68,0.3);}.mks_author_widget .mks_autor_link_wrap a:hover,.mks_read_more a:hover,.herald-read-more:hover{border-color: rgba(2,136,209,0.5);}.comment-form,.herald-gray-area,.entry-content .herald-search-form,.herald-mod-desc .herald-search-form{background-color: rgba(68,68,68,0.06);border: 1px solid rgba(68,68,68,0.15);}.herald-boxed .herald-breadcrumbs{background-color: rgba(68,68,68,0.06);}.herald-breadcrumbs{border-color: rgba(68,68,68,0.15);}.single .herald-entry-content .herald-ad,.archive .herald-posts .herald-ad{border-top: 1px solid rgba(68,68,68,0.15);}.archive .herald-posts .herald-ad{border-bottom: 1px solid rgba(68,68,68,0.15);}li.comment .comment-body:after{background-color: rgba(68,68,68,0.06);}.herald-pf-invert .entry-title a:hover .herald-format-icon{background: #0288d1;}.herald-responsive-header,.herald-mobile-nav,.herald-responsive-header .herald-menu-popup-search .fa{color: #ffffff;background: #0288d1;}.herald-responsive-header a{color: #ffffff;}.herald-mobile-nav li a{color: #ffffff;}.herald-mobile-nav li a,.herald-mobile-nav .herald-mega-menu.herald-mega-menu-classic>.sub-menu>li>a{border-bottom: 1px solid rgba(255,255,255,0.15);}.herald-mobile-nav{border-right: 1px solid rgba(255,255,255,0.15);}.herald-mobile-nav li a:hover{color: #fff;background-color: #424242;}.herald-menu-toggler{color: #ffffff;border-color: rgba(255,255,255,0.15);}.herald-goto-top{color: #ffffff;background-color: #333333;}.herald-goto-top:hover{background-color: #0288d1;}.herald-responsive-header .herald-menu-popup > span,.herald-responsive-header .herald-search-active > span{color: #ffffff;}.herald-responsive-header .herald-menu-popup-search .herald-in-popup{background: #ffffff;}.herald-responsive-header .herald-search-input,.herald-responsive-header .herald-menu-popup-search .herald-search-submit{color: #444444;}a.herald-cat-10 , .widget a.herald-cat-10{ color: #009688;}.herald-mod-head.herald-cat-10:after{ background:#009688; }.herald-mod-head.herald-cat-10 .herald-color { background:#009688; }.herald-ovrld .meta-category a.herald-cat-10{ background-color: #009688; color: #FFF;}.widget_categories .cat-item-10 .count { background-color: #009688;}.herald-fa-colored .herald-cat-10 .fa-post-thumbnail:before { background-color: #009688;}.herald-fa-wrapper .meta-category .herald-cat-10 { background-color: #009688;}.widget_categories .cat-item-10 a:hover { color: #009688;}.herald-site-footer .widget a.herald-cat-10 { color: #009688;}li.herald-mega-menu .sub-menu a.herald-cat-10 { color: #009688;}a.herald-cat-7 , .widget a.herald-cat-7{ color: #ba68c8;}.herald-mod-head.herald-cat-7:after{ background:#ba68c8; }.herald-mod-head.herald-cat-7 .herald-color { background:#ba68c8; }.herald-ovrld .meta-category a.herald-cat-7{ background-color: #ba68c8; color: #FFF;}.widget_categories .cat-item-7 .count { background-color: #ba68c8;}.herald-fa-colored .herald-cat-7 .fa-post-thumbnail:before { background-color: #ba68c8;}.herald-fa-wrapper .meta-category .herald-cat-7 { background-color: #ba68c8;}.widget_categories .cat-item-7 a:hover { color: #ba68c8;}.herald-site-footer .widget a.herald-cat-7 { color: #ba68c8;}li.herald-mega-menu .sub-menu a.herald-cat-7 { color: #ba68c8;}a.herald-cat-6 , .widget a.herald-cat-6{ color: #f06292;}.herald-mod-head.herald-cat-6:after{ background:#f06292; }.herald-mod-head.herald-cat-6 .herald-color { background:#f06292; }.herald-ovrld .meta-category a.herald-cat-6{ background-color: #f06292; color: #FFF;}.widget_categories .cat-item-6 .count { background-color: #f06292;}.herald-fa-colored .herald-cat-6 .fa-post-thumbnail:before { background-color: #f06292;}.herald-fa-wrapper .meta-category .herald-cat-6 { background-color: #f06292;}.widget_categories .cat-item-6 a:hover { color: #f06292;}.herald-site-footer .widget a.herald-cat-6 { color: #f06292;}li.herald-mega-menu .sub-menu a.herald-cat-6 { color: #f06292;}a.herald-cat-8 , .widget a.herald-cat-8{ color: #ffa726;}.herald-mod-head.herald-cat-8:after{ background:#ffa726; }.herald-mod-head.herald-cat-8 .herald-color { background:#ffa726; }.herald-ovrld .meta-category a.herald-cat-8{ background-color: #ffa726; color: #FFF;}.widget_categories .cat-item-8 .count { background-color: #ffa726;}.herald-fa-colored .herald-cat-8 .fa-post-thumbnail:before { background-color: #ffa726;}.herald-fa-wrapper .meta-category .herald-cat-8 { background-color: #ffa726;}.widget_categories .cat-item-8 a:hover { color: #ffa726;}.herald-site-footer .widget a.herald-cat-8 { color: #ffa726;}li.herald-mega-menu .sub-menu a.herald-cat-8 { color: #ffa726;}a.herald-cat-9 , .widget a.herald-cat-9{ color: #2196f3;}.herald-mod-head.herald-cat-9:after{ background:#2196f3; }.herald-mod-head.herald-cat-9 .herald-color { background:#2196f3; }.herald-ovrld .meta-category a.herald-cat-9{ background-color: #2196f3; color: #FFF;}.widget_categories .cat-item-9 .count { background-color: #2196f3;}.herald-fa-colored .herald-cat-9 .fa-post-thumbnail:before { background-color: #2196f3;}.herald-fa-wrapper .meta-category .herald-cat-9 { background-color: #2196f3;}.widget_categories .cat-item-9 a:hover { color: #2196f3;}.herald-site-footer .widget a.herald-cat-9 { color: #2196f3;}li.herald-mega-menu .sub-menu a.herald-cat-9 { color: #2196f3;}a.herald-cat-1 , .widget a.herald-cat-1{ color: #78909c;}.herald-mod-head.herald-cat-1:after{ background:#78909c; }.herald-mod-head.herald-cat-1 .herald-color { background:#78909c; }.herald-ovrld .meta-category a.herald-cat-1{ background-color: #78909c; color: #FFF;}.widget_categories .cat-item-1 .count { background-color: #78909c;}.herald-fa-colored .herald-cat-1 .fa-post-thumbnail:before { background-color: #78909c;}.herald-fa-wrapper .meta-category .herald-cat-1 { background-color: #78909c;}.widget_categories .cat-item-1 a:hover { color: #78909c;}.herald-site-footer .widget a.herald-cat-1 { color: #78909c;}li.herald-mega-menu .sub-menu a.herald-cat-1 { color: #78909c;}a.herald-cat-5 , .widget a.herald-cat-5{ color: #f44336;}.herald-mod-head.herald-cat-5:after{ background:#f44336; }.herald-mod-head.herald-cat-5 .herald-color { background:#f44336; }.herald-ovrld .meta-category a.herald-cat-5{ background-color: #f44336; color: #FFF;}.widget_categories .cat-item-5 .count { background-color: #f44336;}.herald-fa-colored .herald-cat-5 .fa-post-thumbnail:before { background-color: #f44336;}.herald-fa-wrapper .meta-category .herald-cat-5 { background-color: #f44336;}.widget_categories .cat-item-5 a:hover { color: #f44336;}.herald-site-footer .widget a.herald-cat-5 { color: #f44336;}li.herald-mega-menu .sub-menu a.herald-cat-5 { color: #f44336;}a.herald-cat-110 , .widget a.herald-cat-110{ color: #8d6e63;}.herald-mod-head.herald-cat-110:after{ background:#8d6e63; }.herald-mod-head.herald-cat-110 .herald-color { background:#8d6e63; }.herald-ovrld .meta-category a.herald-cat-110{ background-color: #8d6e63; color: #FFF;}.widget_categories .cat-item-110 .count { background-color: #8d6e63;}.herald-fa-colored .herald-cat-110 .fa-post-thumbnail:before { background-color: #8d6e63;}.herald-fa-wrapper .meta-category .herald-cat-110 { background-color: #8d6e63;}.widget_categories .cat-item-110 a:hover { color: #8d6e63;}.herald-site-footer .widget a.herald-cat-110 { color: #8d6e63;}li.herald-mega-menu .sub-menu a.herald-cat-110 { color: #8d6e63;}.site-title a{text-transform: none;}.site-description{text-transform: none;}.main-navigation{text-transform: none;}.entry-title{text-transform: none;}.meta-category a{text-transform: none;}.herald-mod-title{text-transform: none;}.herald-sidebar .widget-title{text-transform: none;}.herald-site-footer .widget-title{text-transform: none;}.fa-post-thumbnail:before, .herald-ovrld .herald-post-thumbnail span:before, .herald-ovrld .herald-post-thumbnail a:before { opacity: 0.5; }.herald-fa-item:hover .fa-post-thumbnail:before, .herald-ovrld:hover .herald-post-thumbnail a:before, .herald-ovrld:hover .herald-post-thumbnail span:before{ opacity: 0.8; }@media only screen and (min-width: 1249px) {.herald-site-header .header-top,.header-middle,.header-bottom,.herald-header-sticky,.header-trending{ display:block !important;}.herald-responsive-header,.herald-mobile-nav{display:none !important;}.herald-site-content {margin-top: 0 !important;}.herald-mega-menu .sub-menu {display: block;}}
+</style>
+<link rel='stylesheet' id='mks_shortcodes_simple_line_icons-group-css' href='http://math2it.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/meks-flexible-shortcodes/css/simple-line/simple-line-icons.css,wp-content/plugins/meks-flexible-shortcodes/css/style.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='herald-fonts-css'  href='http://fonts.googleapis.com/css?family=Maven+Pro%3A400%2C500&#038;subset=latin&#038;ver=1.7' type='text/css' media='all' />
+<script type='text/javascript' src='http://math2it.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://math2it.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var quicktagsL10n = {"closeAllOpenTags":"\u0110\u00f3ng t\u1ea5t c\u1ea3 c\u00e1c th\u1ebb","closeTags":"\u0111\u00f3ng th\u1ebb","enterURL":"\u0110i\u1ec1n \u0111\u01b0\u1eddng d\u1eabn","enterImageURL":"\u0110i\u1ec1n \u0111\u01b0\u1eddng d\u1eabn c\u1ee7a \u1ea3nh","enterImageDescription":"\u0110i\u1ec1n m\u00f4 t\u1ea3 c\u1ee7a \u1ea3nh","textdirection":"h\u01b0\u1edbng \u0111\u1ecdc v\u0103n b\u1ea3n","toggleTextdirection":"Chuy\u1ec3n \u0111\u1ed5i h\u01b0\u1edbng \u0111\u1ecdc v\u0103n b\u1ea3n c\u1ee7a b\u1ed9 so\u1ea1n th\u1ea3o","dfw":"Ch\u1ebf \u0111\u1ed9 vi\u1ebft ch\u1ed1ng xao nh\u00e3ng","strong":"\u0110\u1eadm","strongClose":"\u0110\u00f3ng nh\u00e3n \u0111\u1eadm","em":"Nghi\u00eang","emClose":"\u0110\u00f3ng nh\u00e3n nghi\u00eang","link":"Th\u00eam \u0111\u01b0\u1eddng d\u1eabn","blockquote":"Tr\u00edch d\u1eabn","blockquoteClose":"\u0110\u00f3ng nh\u00e3n d\u1ea5u nh\u00e1y k\u00e9p","del":"V\u0103n b\u1ea3n \u0111\u00e3 x\u00f3a (g\u1ea1ch ngang gi\u1eefa ch\u1eef)","delClose":"\u0110\u00f3ng nh\u00e3n v\u0103n b\u1ea3n \u0111\u00e3 x\u00f3a","ins":"V\u0103n b\u1ea3n \u0111\u00e3 ch\u00e8n","insClose":"\u0110\u00f3ng th\u1ebb v\u0103n b\u1ea3n \u0111\u00e3 ch\u00e8n","image":"Ch\u00e8n \u1ea3nh","ul":"Danh s\u00e1ch li\u1ec7t k\u00ea \u0111\u01b0\u1ee3c \u0111\u00e1nh s\u1ed1","ulClose":"\u0110\u00f3ng nh\u00e3n danh s\u00e1ch \u0111\u01b0\u1ee3c k\u00ed hi\u1ec7u","ol":"Danh s\u00e1ch \u0111\u01b0\u1ee3c \u0111\u00e1nh s\u1ed1","olClose":"\u0110\u00f3ng nh\u00e3n danh s\u00e1ch \u0111\u01b0\u1ee3c \u0111\u00e1nh s\u1ed1","li":"M\u1ee5c danh s\u00e1ch","liClose":"\u0110\u00f3ng nh\u00e3n m\u1ee5c danh s\u00e1ch","code":"M\u00e3","codeClose":"\u0110\u00f3ng nh\u00e3n m\u00e3","more":"Ch\u00e8n th\u1ebb \u0110\u1ecdc Th\u00eam"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://math2it.com/wp-content/plugins/bwp-minify/min/?f=wp-includes/js/quicktags.min.js,wp-content/plugins/meks-flexible-shortcodes/js/main.js'></script>
+<link rel='https://api.w.org/' href='http://math2it.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://math2it.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://math2it.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.0.1" />
+<link rel='shortlink' href='http://math2it.com/?p=4841' />
+<link rel="alternate" type="application/json+oembed" href="http://math2it.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmath2it.com%2Fthu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://math2it.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmath2it.com%2Fthu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex%2F&#038;format=xml" />
+<style type="text/css">div#toc_container {background: #fff87f;border: 1px solid #fed847;width: 40%;}div#toc_container p.toc_title a,div#toc_container ul.toc_list a {color: #0089e5;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #FF4422;}div#toc_container p.toc_title a:hover,div#toc_container ul.toc_list a:hover {color: #FF4422;}div#toc_container p.toc_title a:visited,div#toc_container ul.toc_list a:visited {color: #d122ff;}</style><script type="text/javascript">
+  jQuery(function($){
+    $('.comment-reply-link').click(function(e){
+      e.preventDefault();
+      var args = $(this).data('onclick');
+      args = args.replace(/.*\(|\)/gi, '').replace(/\"|\s+/g, '');
+      args = args.split(',');
+      tinymce.EditorManager.execCommand('mceRemoveEditor', true, 'comment');
+      addComment.moveForm.apply( addComment, args );
+      tinymce.EditorManager.execCommand('mceAddEditor', true, 'comment');
+    });
+    $('#cancel-comment-reply-link').click(function(e){
+        e.preventDefault();
+        tinymce.EditorManager.execCommand('mceRemoveEditor', true, 'comment');
+        setTimeout(function(){ tinymce.EditorManager.execCommand('mceAddEditor', true, 'comment'); }, 1);
+    });
+  });
+</script>
+
+	<style type='text/css'>
+	#wp-comment-editor-container {
+		border: 2px solid #DFDFDF;
+	}
+	</style>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="http://math2it.com/wp-content/uploads/2016/05/cropped-bieutuongsite512-65x65.png" sizes="32x32" />
+<link rel="icon" href="http://math2it.com/wp-content/uploads/2016/05/cropped-bieutuongsite512-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://math2it.com/wp-content/uploads/2016/05/cropped-bieutuongsite512-300x300.png" />
+<meta name="msapplication-TileImage" content="http://math2it.com/wp-content/uploads/2016/05/cropped-bieutuongsite512-300x300.png" />
+<style type="text/css">/* font */ .entry-content p{ font-size: 1.8rem;} .herald-entry-content{font-size: 1.8rem;} b, optgroup, strong{ font-weight: 500; } .h7{ font-size: 1.6rem; } .widget{ font-size: 1.6rem; } .herald-lay-k h2{ font-size: 1.7rem!important; } /* margin p */ .herald-entry-content ol, .herald-entry-content p, .herald-entry-content ul{ margin: 0 0 1rem; } @media(max-width: 767px) { .herald-entry-content p { margin-bottom: 1rem; } } /* đánh số header*/ body { counter-reset: h2counter; } .entry-content h2{ counter-reset: h3counter; } .entry-content h3 { counter-reset: h4counter; } .entry-content h2:before { content: counter(h2counter) ".\0000a0\0000a0"; counter-increment: h2counter; } .entry-content h3:before { content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0"; counter-increment: h3counter; } .entry-content h4:before { content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0"; counter-increment: h4counter; } .entry-content h2.nocount:before { content: none; counter-increment: none; } .entry-content h3.nocount:before { content: none; counter-increment: none; } /* khoang cah giua cac hang trong list*/ .entry-content ol li, .entry-content ul li{ margin-bottom: .5rem; } .herald-entry-content ol, .herald-entry-content ul{ margin: 0 0 1rem; } /*-------------*/ /* khoang cach h2 h3 */ .entry-content .h2, .entry-content h2{ margin-top: 3rem; } .entry-content .h3, .entry-content h3{ margin-top: 2rem; } /*----------*/ /* meta-tag cuoi bai*/ .meta-tags{ margin-top: 2em; } .header-bottom .hel-l, .header-bottom .hel-r{ top: 0 !important; } .entry-content h2{ color: darkcyan; } .entry-content h3{ color: darkgoldenrod; font-size: 2.5rem; } .attachment-herald-lay-single, .size-herald-lay-single, .wp-post-image{ width: 100%; max-height: 420px; } .herald-lay-i .h5, .herald-no-sid .herald-posts .h6, h5{ font-size: 1em!important; line-height: 2.1rem!important; } .herald-fa-4 .entry-title h6{ font-size: 2.5rem!important; line-height: 2.9rem!important; } .herald-menu, .meta-category a{ text-transform: none!important; } .herald-menu{ font-size: 1.6rem!important; } .maucam{ background: #ff5c5c!important; border-radius: 20px; } .herald-pagination .page-numbers{ color: white!important; } #toc_container{ float: right; } .herald-no-sid .herald-fa-wrapper.herald-fa-3 .herald-fa-grid, .herald-no-sid .herald-fa-wrapper.herald-fa-4 .herald-fa-grid, .herald-no-sid .herald-fa-wrapper.herald-fa-5, .herald-no-sid .herald-fa-wrapper.herald-fa-5 .herald-fa-item{ height: 400px; } .herald-no-sid .herald-fa-wrapper.herald-fa-3 .herald-fa-item, .herald-no-sid .herald-fa-wrapper.herald-fa-4 .herald-fa-item{ height: 200px; } @media only screen and (min-device-width : 320px) and (max-device-width : 480px){ .herald-ad { display: none!important;}}</style><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58921685-3', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+
+<body class="post-template-default single single-post postid-4841 single-format-standard chrome">
+
+
+
+	<header id="header" class="herald-site-header">
+
+											<div class="header-middle herald-header-wraper hidden-xs hidden-sm">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-12 hel-el">
+				
+										
+															<div class="hel-c herald-go-ver">
+													<div class="site-branding">
+				<span class="site-title h1"><a href="http://math2it.com/" rel="home"><img class="herald-logo" src="http://math2it.com/wp-content/uploads/2016/06/logoHerald50t.png" alt="Math2IT" ></a></span>
+	</div>
+													<span class="site-description">Toán học thực tế | Phương pháp giáo dục | Khoa học thường thức | Thủ thuật công nghệ</span>											</div>
+					
+													
+					
+				
+				</div>
+		</div>
+		</div>
+</div>							<div class="header-bottom herald-header-wraper hidden-sm hidden-xs">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-12 hel-el">
+				
+															<div class="hel-l">
+													<nav class="main-navigation herald-menu">	
+				<ul id="menu-main-menu" class="menu"><li id="menu-item-3383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3383"><a href="http://math2it.com">Home</a><li id="menu-item-469" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-469"><a href="http://math2it.com/category/toan-hoc/">Toán</a>
+<ul class="sub-menu">
+	<li id="menu-item-3969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3969"><a href="http://math2it.com/tag/toan-cao-cap/">Toán cao cấp</a>	<li id="menu-item-3970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3970"><a href="http://math2it.com/tag/toan-thpt/">Toán sơ cấp</a>	<li id="menu-item-3968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3968"><a href="http://math2it.com/tag/hieu-toan-hoc/">Hiểu Toán học</a>	<li id="menu-item-3971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3971"><a href="http://math2it.com/tag/chuyen-toan-hoc/">Chuyện Toán học</a></ul>
+<li id="menu-item-129" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-129"><a href="http://math2it.com/category/cong-nghe/">Công nghệ</a>
+<ul class="sub-menu">
+	<li id="menu-item-3977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977"><a href="http://math2it.com/tag/linux/">Linux</a>	<li id="menu-item-3975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3975"><a href="http://math2it.com/tag/osx/">MacOS</a>	<li id="menu-item-3976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3976"><a href="http://math2it.com/tag/windows/">Windows</a>	<li id="menu-item-3978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3978"><a href="http://math2it.com/tag/hieu-cong-nghe/">Kiến thức công nghệ</a></ul>
+<li id="menu-item-1942" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1942"><a href="http://math2it.com/category/cong-cu/">Công cụ</a><li id="menu-item-471" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-471"><a href="http://math2it.com/category/latex/">LaTeX</a>
+<ul class="sub-menu">
+	<li id="menu-item-3973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3973"><a href="http://math2it.com/tag/ve-trong-latex/">Vẽ trong LaTeX</a>	<li id="menu-item-3974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3974"><a href="http://math2it.com/tag/loi-latex/">Lỗi trong LaTeX</a>	<li id="menu-item-3972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3972"><a href="http://math2it.com/tag/tu-hoc-latex/">Tự học LaTeX A-Z</a></ul>
+<li id="menu-item-130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-130"><a href="http://math2it.com/category/giao-duc/">Giáo dục</a><li id="menu-item-470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="http://math2it.com/category/kham-pha/">Khám phá</a><li id="menu-item-3599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3599"><a href="http://math2it.com/tag/video">Video</a><li id="menu-item-1943" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1943"><a href="#">Math2IT</a>
+<ul class="sub-menu">
+	<li id="menu-item-599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-599"><a href="http://math2it.com/chu-de/">Chủ đề</a>	<li id="menu-item-410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a href="http://math2it.com/contact/">Liên hệ</a>	<li id="menu-item-1946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="http://math2it.com/gioi-thieu/">Giới thiệu</a></ul>
+</ul>	</nav>													<div class="herald-menu-popup-search">
+<span class="fa fa-search"></span>
+	<div class="herald-in-popup">
+		<form class="herald-search-form" action="http://math2it.com/" method="get">
+	<input name="s" class="herald-search-input" type="text" value="" placeholder="Gõ vào đây để tìm" /><button type="submit" class="herald-search-submit"></button>
+</form>	</div>
+</div>											</div>
+					
+										
+															<div class="hel-r">
+															<ul id="menu-herald-social" class="herald-soc-nav"><li id="menu-item-3163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3163"><a href="https://www.facebook.com/math2it"><span class="herald-social-name">Facebook</span></a></li>
+<li id="menu-item-3220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3220"><a href="https://plus.google.com/u/0/+Math2itblogspot"><span class="herald-social-name">Google+</span></a></li>
+</ul>											</div>
+										
+					
+				
+				</div>
+		</div>
+		</div>
+</div>					
+	</header>
+
+			<div id="sticky-header" class="herald-header-sticky herald-header-wraper herald-slide hidden-xs hidden-sm">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-12 hel-el">
+				
+															<div class="hel-l herald-go-hor">
+													<div class="site-branding mini">
+		<span class="site-title h1"><a href="http://math2it.com/" rel="home"><img class="herald-logo-mini" src="http://math2it.com/wp-content/uploads/2016/06/logoHerald32.png" alt="Math2IT" ></a></span>
+</div>											</div>
+					
+										
+															<div class="hel-r herald-go-hor">
+													<nav class="main-navigation herald-menu">	
+				<ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3383"><a href="http://math2it.com">Home</a><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-469"><a href="http://math2it.com/category/toan-hoc/">Toán</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3969"><a href="http://math2it.com/tag/toan-cao-cap/">Toán cao cấp</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3970"><a href="http://math2it.com/tag/toan-thpt/">Toán sơ cấp</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3968"><a href="http://math2it.com/tag/hieu-toan-hoc/">Hiểu Toán học</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3971"><a href="http://math2it.com/tag/chuyen-toan-hoc/">Chuyện Toán học</a></ul>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-129"><a href="http://math2it.com/category/cong-nghe/">Công nghệ</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977"><a href="http://math2it.com/tag/linux/">Linux</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3975"><a href="http://math2it.com/tag/osx/">MacOS</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3976"><a href="http://math2it.com/tag/windows/">Windows</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3978"><a href="http://math2it.com/tag/hieu-cong-nghe/">Kiến thức công nghệ</a></ul>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1942"><a href="http://math2it.com/category/cong-cu/">Công cụ</a><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-471"><a href="http://math2it.com/category/latex/">LaTeX</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3973"><a href="http://math2it.com/tag/ve-trong-latex/">Vẽ trong LaTeX</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3974"><a href="http://math2it.com/tag/loi-latex/">Lỗi trong LaTeX</a>	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3972"><a href="http://math2it.com/tag/tu-hoc-latex/">Tự học LaTeX A-Z</a></ul>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-130"><a href="http://math2it.com/category/giao-duc/">Giáo dục</a><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="http://math2it.com/category/kham-pha/">Khám phá</a><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3599"><a href="http://math2it.com/tag/video">Video</a><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1943"><a href="#">Math2IT</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-599"><a href="http://math2it.com/chu-de/">Chủ đề</a>	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a href="http://math2it.com/contact/">Liên hệ</a>	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="http://math2it.com/gioi-thieu/">Giới thiệu</a></ul>
+</ul>	</nav>											</div>
+										
+					
+				
+				</div>
+		</div>
+		</div>
+</div>	
+	<div id="herald-responsive-header" class="herald-responsive-header herald-slide hidden-lg hidden-md">
+	<div class="container">
+		<div class="herald-nav-toggle"><i class="fa fa-bars"></i></div>
+				<div class="site-branding mini">
+		<span class="site-title h1"><a href="http://math2it.com/" rel="home"><img class="herald-logo-mini" src="http://math2it.com/wp-content/uploads/2016/06/logoHerald32.png" alt="Math2IT" ></a></span>
+</div>		<div class="herald-menu-popup-search">
+<span class="fa fa-search"></span>
+	<div class="herald-in-popup">
+		<form class="herald-search-form" action="http://math2it.com/" method="get">
+	<input name="s" class="herald-search-input" type="text" value="" placeholder="Gõ vào đây để tìm" /><button type="submit" class="herald-search-submit"></button>
+</form>	</div>
+</div>	</div>
+</div>
+<div class="herald-mobile-nav herald-slide hidden-lg hidden-md">
+	<ul id="menu-main-menu-2" class="herald-mob-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3383"><a href="http://math2it.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-469"><a href="http://math2it.com/category/toan-hoc/">Toán</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3969"><a href="http://math2it.com/tag/toan-cao-cap/">Toán cao cấp</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3970"><a href="http://math2it.com/tag/toan-thpt/">Toán sơ cấp</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3968"><a href="http://math2it.com/tag/hieu-toan-hoc/">Hiểu Toán học</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3971"><a href="http://math2it.com/tag/chuyen-toan-hoc/">Chuyện Toán học</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-129"><a href="http://math2it.com/category/cong-nghe/">Công nghệ</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977"><a href="http://math2it.com/tag/linux/">Linux</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3975"><a href="http://math2it.com/tag/osx/">MacOS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3976"><a href="http://math2it.com/tag/windows/">Windows</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3978"><a href="http://math2it.com/tag/hieu-cong-nghe/">Kiến thức công nghệ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1942"><a href="http://math2it.com/category/cong-cu/">Công cụ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-471"><a href="http://math2it.com/category/latex/">LaTeX</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3973"><a href="http://math2it.com/tag/ve-trong-latex/">Vẽ trong LaTeX</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3974"><a href="http://math2it.com/tag/loi-latex/">Lỗi trong LaTeX</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3972"><a href="http://math2it.com/tag/tu-hoc-latex/">Tự học LaTeX A-Z</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-130"><a href="http://math2it.com/category/giao-duc/">Giáo dục</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="http://math2it.com/category/kham-pha/">Khám phá</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3599"><a href="http://math2it.com/tag/video">Video</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1943"><a href="#">Math2IT</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-599"><a href="http://math2it.com/chu-de/">Chủ đề</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a href="http://math2it.com/contact/">Liên hệ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="http://math2it.com/gioi-thieu/">Giới thiệu</a></li>
+</ul>
+</li>
+</ul>	
+		</div>
+	
+	<div id="content" class="herald-site-content herald-slide">
+
+	
+
+
+<div class="herald-section container ">
+
+			<article id="post-4841" class="herald-single post-4841 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-thu-thuat-latex tag-tu-hoc-latex">
+			<div class="row">
+								
+			
+<div class="col-lg-9 col-md-9 col-mod-single col-mod-main">
+	
+	<header class="entry-header">
+		<h1 class="entry-title h1">Thủ thuật hay cho người viết luận văn và sách bằng LaTeX</h1>			<div class="entry-meta entry-meta-single"><div class="meta-item herald-date"><span class="updated">04/04/2018</span></div><div class="meta-item herald-author"><span class="vcard author"><span class="fn"><a href="http://math2it.com/author/math2it/">Math2IT</a></span></span></div></div>
+	</header>		
+		<div class="row">
+
+			
+
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="entry-content herald-entry-content">
+
+	
+	
+					
+	<p>Thủ thuật này giúp các bạn soạn thảo tài liệu lớn bằng LaTeX quản lý và biên dịch tài liệu nhanh hơn.</p>
+<p>Để có thể chia các chương ra thành nhiều file nhỏ để dễ quản lý thay vì đặt tất cả chung trong một file chính (tạm gọi là <strong>main.tex</strong>), bạn vui lòng xem <a href="http://math2it.com/latex-16-viet-tai-lieu-lon-bang-cach-chia-thanh-nhieu-file-latex-nho-hon/" target="_blank" rel="noopener">bài viết này</a>. Tuy nhiên, mỗi khi bạn muốn biên dịch file <em>main.tex</em> thì nó sẽ biên dịch lại từ đầu toàn bộ sách, dẫn tới khá là lâu trong khi bạn chỉ đang thay đổi có tí xíu ở chương 1 và muốn biên dịch để thấy kết quả.</p>
+<p><strong>Bạn muốn: chỉ biên dịch duy nhất chương 1 thôi thì phải làm sao?</strong></p>
+<h2>Khái niệm nhập môn điện toánr</h2>
+<p>1. Trong file chính, bạn dùng lệnh 
+			<span id="crayon-5c1d9df28a416583026375" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\include</span><span class="crayon-sy">{</span>chapters/chapter1<span class="crayon-sy">}</span><span class="crayon-h"> </span>như<span class="crayon-h"> </span>bình<span class="crayon-h"> </span>thường<span class="crayon-sy">.</span></span></span>
+<p>2. Trước 
+			<span id="crayon-5c1d9df28a42f533006146" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\begin</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></span></span>  của file <em>main.tex</em>. bạn dùng lệnh 
+			<span id="crayon-5c1d9df28a4a4148544103" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\includeonly</span><span class="crayon-sy">{</span>chapters/chapter1<span class="crayon-sy">}</span></span></span>  để nói cho latex biết là bạn chỉ đang muốn biên dịch <em>chapter1.tex</em> thôi.</p>
+<p>Bạn cũng có thể chèn nhiều chương cùng lúc</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a4b2797841845" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a4b2797841845-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a4b2797841845-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a4b2797841845-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a4b2797841845-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a4b2797841845-2"><span class="crayon-st">\includeonly</span><span class="crayon-sy">{</span>chapters/chapter1<span class="crayon-sy">,</span>chapters/chapter2<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a4b2797841845-3">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+
+<p><strong>Nhược điểm</strong> của cách 1 là khi biên dịch, bạn phải quay lại <em>main.tex</em> để biên dịch và có thể những phần khác nằm ngoài 
+			<span id="crayon-5c1d9df28a4bd226641827" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\includeonly</span></span></span>  sẽ không được hiển thị sau khi biên dịch.</p>
+<div class="mks_accordion">
+<div class="mks_accordion_item">
+			<div class="mks_accordion_heading">Nói thêm về sự khác nhau giữa include và input<i class="fa fa-plus"></i><i class="fa fa-minus"></i></div>
+				<div class="mks_accordion_content">
+<ul>
+<li>
+			<span id="crayon-5c1d9df28a4d2487282408" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\include</span><span class="crayon-sy">{</span>filename<span class="crayon-sy">}</span></span></span> : nó sẽ tạo ra một trang mới, tức nội dung trong <em>filename.tex</em> sẽ được đặt ở một trang mới. Bạn không nên dùng <strong>.tex</strong> phía sau filename. Với include, bạn có thể áp dụng 
+			<span id="crayon-5c1d9df28a4de556975473" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\includeonly</span></span></span>  như ở trên.</li>
+<li>
+			<span id="crayon-5c1d9df28a4e8509565572" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\input</span><span class="crayon-sy">{</span>filename<span class="crayon-sy">}</span></span></span> : đây đơn thuần là bạn đem nội dung của filename ra một file riêng thay vì ghi trực tiếp trong file main.tex. Nói cách khác, nó giống như việc bạn đem tất cả nội dung trong <em>filename</em> của input và dáng vào vị trí chỗ 
+			<span id="crayon-5c1d9df28a4f2340319689" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\input</span><span class="crayon-sy">{</span>filename<span class="crayon-sy">}</span></span></span>  trong <em>main.tex</em>. Tên filename bạn có thể dùng .tex hoặc không đều được.</li>
+</ul>
+</div>
+			</div>
+</div>
+<h2>Cách 2 (nâng cao): dùng package subfiles</h2>
+<p><strong>Ưu điểm</strong> của cách này là bạn có thể biên dịch ngay trong file chapter1.tex mà không cần quay lại file <em>main.tex</em>. Cũng như các chương khác vẫn sẽ hiển thị dù bạn chỉ làm việc với <em>chapter1.tex</em></p>
+<p>1. Đặt câu lệnh sau trước 
+			<span id="crayon-5c1d9df28a509291334658" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\begin</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></span></span>
+</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a52f107499584" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a52f107499584-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a52f107499584-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a52f107499584-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a52f107499584-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a52f107499584-2"><span class="crayon-st">\usepackage</span><span class="crayon-sy">{</span>subfiles<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a52f107499584-3">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>
+<p>2. Trong <strong>main.tex</strong> chèn file bằng</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a563912385552" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a563912385552-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a563912385552-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a563912385552-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a563912385552-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a563912385552-2"><span class="crayon-st">\subfile</span><span class="crayon-sy">{</span>chapter1<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a563912385552-3">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+
+<p>3. Trong file <strong>chapter1.tex</strong>, dùng</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a580277544082" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a580277544082-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a580277544082-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a580277544082-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a580277544082-4">4</div><div class="crayon-num" data-line="crayon-5c1d9df28a580277544082-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a580277544082-6">6</div><div class="crayon-num" data-line="crayon-5c1d9df28a580277544082-7">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a580277544082-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a580277544082-2"><span class="crayon-st">\documentclass</span><span class="crayon-sy">[</span>main<span class="crayon-sy">.</span>tex<span class="crayon-sy">]</span><span class="crayon-sy">{</span>subfiles<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a580277544082-3"><span class="crayon-st">\begin</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a580277544082-4"><span class="crayon-ta">%</span><span class="crayon-h"> </span><span class="crayon-i">n</span>ộ<span class="crayon-i">i</span><span class="crayon-h"> </span><span class="crayon-i">dung</span><span class="crayon-h"> </span><span class="crayon-i">ch</span>ươ<span class="crayon-i">ng</span></div><div class="crayon-line" id="crayon-5c1d9df28a580277544082-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a580277544082-6"><span class="crayon-st">\end</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a580277544082-7">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0269 seconds] -->
+
+<p>Nếu bạn muốn có những nội dung chỉ hiện thị khi biên dịch chapter1.tex mà không hiển thị khi biên dịch main.tex hoặc ngược lại thì xem <a href="https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Separate_compilation_of_child_documents" target="_blank" rel="noopener">bài viết này</a>.</p>
+<p><strong>Lưu ý</strong>, nếu bạn để hình trong 1 folder riêng, các chương trong một folder riêng, giả sử như thế này</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a58c937576014" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a58c937576014-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a58c937576014-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a58c937576014-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a58c937576014-4">4</div><div class="crayon-num" data-line="crayon-5c1d9df28a58c937576014-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a58c937576014-6">6</div><div class="crayon-num" data-line="crayon-5c1d9df28a58c937576014-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a58c937576014-8">8</div><div class="crayon-num" data-line="crayon-5c1d9df28a58c937576014-9">9</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a58c937576014-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a58c937576014-2">figures</div><div class="crayon-line" id="crayon-5c1d9df28a58c937576014-3"><span class="crayon-sy">|</span><span class="crayon-h"> </span>fig1<span class="crayon-sy">.</span>png</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a58c937576014-4"><span class="crayon-sy">|</span><span class="crayon-h"> </span>fig2<span class="crayon-sy">.</span>png</div><div class="crayon-line" id="crayon-5c1d9df28a58c937576014-5">chapters</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a58c937576014-6"><span class="crayon-sy">|</span><span class="crayon-h"> </span>chap1<span class="crayon-sy">.</span>tex</div><div class="crayon-line" id="crayon-5c1d9df28a58c937576014-7"><span class="crayon-sy">|</span><span class="crayon-h"> </span>chap2<span class="crayon-sy">.</span>tex</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a58c937576014-8">main<span class="crayon-sy">.</span>tex</div><div class="crayon-line" id="crayon-5c1d9df28a58c937576014-9">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0011 seconds] -->
+
+<p>Thì khi chèn hình, bạn cần dùng gói lệnh</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a596355101744" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a596355101744-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a596355101744-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a596355101744-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a596355101744-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a596355101744-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a596355101744-2"><span class="crayon-st">\usepackage</span><span class="crayon-sy">{</span>graphicx<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a596355101744-3"><span class="crayon-st">\graphicspath</span><span class="crayon-sy">{</span><span class="crayon-sy">{</span>figures/<span class="crayon-sy">}</span><span class="crayon-sy">{</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span>/figures/<span class="crayon-sy">}</span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a596355101744-4">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+
+<p>Trong đó, cái 
+			<span id="crayon-5c1d9df28a59f690987545" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-sy">{</span>figures/<span class="crayon-sy">}</span></span></span> đầu tiên dùng cho file <em>main.tex</em>, còn cái 
+			<span id="crayon-5c1d9df28a5a8293396718" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-sy">{</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span>/figures/<span class="crayon-sy">}</span></span></span> thứ hai là dùng cho các chương trong folder <em>chapters.</em></p>
+<p>Trong mỗi chương bạn cũng cần sửa đôi chút</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a5b1883297883" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a5b1883297883-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5b1883297883-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a5b1883297883-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a5b1883297883-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5b1883297883-2"><span class="crayon-st">\documentclass</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span>/main<span class="crayon-sy">.</span>tex<span class="crayon-sy">]</span><span class="crayon-sy">{</span>subfiles<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5b1883297883-3">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+
+<p><strong>Nhược điểm</strong> của cách này là bạn phải định nghĩa những gói lệnh, cài đặt cần thiết dùng trong chapter1.tex ngay trong main.tex. Nói khác đi, tất cả cài đặt phải được đặt trong main.tex</p>
+<h2>Cách 3: dùng gói standalone</h2>
+<p><strong>Ưu điểm</strong> của gói này là cho phép bạn chia nhỏ thiết lập (gói lệnh, cài đặt ban đầu,&#8230;) cho từng chương riêng lẻ. <strong>Ví dụ</strong>, <em>chapter1.tex</em> cần dùng gói lệnh abc, xyz nào đó trong khi các chương khác thì không cần đến. Nếu bạn đặt các thiết đặt này vào <em>main.tex</em> thì nó quá dư thừa khi bạn làm việc ở các chương khác ngoài chapter1.</p>
+<p><strong>Nên dùng</strong> cách này khi bạn muốn chèn hình tikz vào trong file chính. Hình ấy được chèn đi chèn lại nhiều lần.</p>
+<p>Bạn có thể dùng 
+			<span id="crayon-5c1d9df28a5bc731746096" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\include</span></span></span>  hay 
+			<span id="crayon-5c1d9df28a5c5665720847" class="crayon-syntax crayon-syntax-inline  crayon-theme-1c-kod crayon-theme-1c-kod-inline crayon-font-courier-new" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 15px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-st">\input</span></span></span>  để chèn các chương vào file chính <em>main.tex</em>. Ví dụ cách sử dụng như bên dưới.</p>
+<p>1. Trong file <strong>main.tex</strong>,</p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a5ce076975309" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5ce076975309-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5ce076975309-4">4</div><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5ce076975309-6">6</div><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5ce076975309-8">8</div><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-9">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5ce076975309-10">10</div><div class="crayon-num" data-line="crayon-5c1d9df28a5ce076975309-11">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5ce076975309-2"><span class="crayon-st">\documentclass</span><span class="crayon-sy">{</span>book<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-3"><span class="crayon-st">\usepackage</span><span class="crayon-sy">{</span>standalone<span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5ce076975309-4"><span class="crayon-st">\begin</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-5"><span class="crayon-ta">%</span><span class="crayon-h"> </span><span class="crayon-i">n</span>ộ<span class="crayon-i">i</span><span class="crayon-h"> </span><span class="crayon-i">dung</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5ce076975309-6">&nbsp;</div><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-7"><span class="crayon-st">\input</span><span class="crayon-sy">{</span>chapter1<span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5ce076975309-8"><span class="crayon-ta">%</span><span class="crayon-h"> </span><span class="crayon-i">n</span>ộ<span class="crayon-i">i</span><span class="crayon-h"> </span><span class="crayon-i">dung</span></div><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5ce076975309-10"><span class="crayon-st">\end</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5ce076975309-11">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0023 seconds] -->
+
+<p>2. Trong file <strong>chapter1.tex</strong> </p>
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5c1d9df28a5d8421475225" class="crayon-syntax crayon-theme-1c-kod crayon-font-courier-new crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 30px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style=" max-height: 400px;">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5c1d9df28a5d8421475225-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5d8421475225-2">2</div><div class="crayon-num" data-line="crayon-5c1d9df28a5d8421475225-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5d8421475225-4">4</div><div class="crayon-num" data-line="crayon-5c1d9df28a5d8421475225-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5d8421475225-6">6</div><div class="crayon-num" data-line="crayon-5c1d9df28a5d8421475225-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5c1d9df28a5d8421475225-8">8</div><div class="crayon-num" data-line="crayon-5c1d9df28a5d8421475225-9">9</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5c1d9df28a5d8421475225-1">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5d8421475225-2"><span class="crayon-st">\documentclass</span><span class="crayon-sy">{</span>standalone<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5d8421475225-3"><span class="crayon-ta">%</span><span class="crayon-h"> </span><span class="crayon-i">thi</span>ế<span class="crayon-i">t</span><span class="crayon-h"> </span><span class="crayon-i">l</span>ậ<span class="crayon-i">p</span><span class="crayon-h"> </span><span class="crayon-i">cho</span><span class="crayon-h"> </span><span class="crayon-e">chapter1</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">v</span>à<span class="crayon-h"> </span><span class="crayon-i">ch</span>ỉ<span class="crayon-h"> </span><span class="crayon-i">ri</span>ê<span class="crayon-i">ng</span><span class="crayon-h"> </span><span class="crayon-i">cho</span><span class="crayon-h"> </span><span class="crayon-i">chapter1</span><span class="crayon-h"> </span><span class="crayon-i">m</span>à<span class="crayon-h"> </span><span class="crayon-i">th</span>ô<span class="crayon-v">i</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5d8421475225-4">&nbsp;</div><div class="crayon-line" id="crayon-5c1d9df28a5d8421475225-5"><span class="crayon-st">\begin</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5d8421475225-6"><span class="crayon-ta">%</span><span class="crayon-h"> </span><span class="crayon-i">n</span>ộ<span class="crayon-i">i</span><span class="crayon-h"> </span><span class="crayon-i">dung</span><span class="crayon-h"> </span><span class="crayon-i">chapter1</span></div><div class="crayon-line" id="crayon-5c1d9df28a5d8421475225-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5c1d9df28a5d8421475225-8"><span class="crayon-st">\end</span><span class="crayon-sy">{</span>document<span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5c1d9df28a5d8421475225-9">&nbsp;</div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0036 seconds] -->
+
+<p>Bạn có thể biên dịch <em>main.tex</em> hay <em>chapter1.tex</em> đều được.</p>
+
+	
+			<div class="meta-tags">
+			<span>Thẻ</span><a href="http://math2it.com/tag/latex/" rel="tag">latex</a> <a href="http://math2it.com/tag/thu-thuat-latex/" rel="tag">thủ thuật latex</a> <a href="http://math2it.com/tag/tu-hoc-latex/" rel="tag">tự học latex</a>		</div>
+	
+				</div>			</div>
+
+			<div id="extras" class="col-lg-12 col-md-12 col-sm-12">
+						<div id="related" class="herald-related-wrapper">		
+		<div class="herald-mod-wrap"><div class="herald-mod-head "><div class="herald-mod-title"><h4 class="h6 herald-mod-h herald-color">Có thể bạn cũng thích</h4></div></div></div>
+		<div class="herald-related row row-eq-height">
+
+													<article class="herald-lay-i post-4369 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-bang-bien-thien tag-latex tag-tex-cho-toan tag-ve-trong-latex">
+	
+
+			<div class="herald-post-thumbnail herald-format-icon-small">
+			<a href="http://math2it.com/huong-dan-ve-bang-bien-thien-va-bang-xet-dau-bang-goi-lenh-tkz-tab/" title="Hướng dẫn vẽ bảng biến thiên và bảng xét dấu bằng gói lệnh tkz-tab">
+				<img width="215" height="143" src="http://math2it.com/wp-content/uploads/2017/06/bbt-215x143.png" class="attachment-herald-lay-i size-herald-lay-i wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2017/06/bbt-215x143.png 215w, http://math2it.com/wp-content/uploads/2017/06/bbt-300x200.png 300w, http://math2it.com/wp-content/uploads/2017/06/bbt-414x276.png 414w, http://math2it.com/wp-content/uploads/2017/06/bbt-470x313.png 470w, http://math2it.com/wp-content/uploads/2017/06/bbt-640x426.png 640w, http://math2it.com/wp-content/uploads/2017/06/bbt-130x86.png 130w, http://math2it.com/wp-content/uploads/2017/06/bbt-187x124.png 187w" sizes="(max-width: 215px) 100vw, 215px" />							</a>
+		</div>
+	
+
+	<div class="entry-header">
+		
+		<h2 class="entry-title h6"><a href="http://math2it.com/huong-dan-ve-bang-bien-thien-va-bang-xet-dau-bang-goi-lenh-tkz-tab/">Hướng dẫn vẽ bảng biến thiên và bảng xét dấu bằng gói lệnh tkz-tab</a></h2>
+					<div class="entry-meta meta-small"><div class="meta-item herald-author"><span class="vcard author"><span class="fn"><a href="http://math2it.com/author/math2it/">Math2IT</a></span></span></div></div>
+			</div>
+
+
+</article>							<article class="herald-lay-i post-630 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-tai-lieu-toan tag-latex tag-tex-cho-toan tag-tex-chuyen-nganh tag-toan-hoc">
+	
+
+			<div class="herald-post-thumbnail herald-format-icon-small">
+			<a href="http://math2it.com/soan-thao-toan-hoc-trong-latex/" title="LaTeX 5 &#8211; Soạn thảo toán học trong LaTeX">
+				<img width="215" height="143" src="http://math2it.com/wp-content/uploads/2016/01/toanhoc-215x143.png" class="attachment-herald-lay-i size-herald-lay-i wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2016/01/toanhoc-215x143.png 215w, http://math2it.com/wp-content/uploads/2016/01/toanhoc-300x200.png 300w, http://math2it.com/wp-content/uploads/2016/01/toanhoc-130x86.png 130w, http://math2it.com/wp-content/uploads/2016/01/toanhoc-187x124.png 187w, http://math2it.com/wp-content/uploads/2016/01/toanhoc-379x250.png 379w" sizes="(max-width: 215px) 100vw, 215px" />							</a>
+		</div>
+	
+
+	<div class="entry-header">
+		
+		<h2 class="entry-title h6"><a href="http://math2it.com/soan-thao-toan-hoc-trong-latex/">LaTeX 5 &#8211; Soạn thảo toán học trong LaTeX</a></h2>
+					<div class="entry-meta meta-small"><div class="meta-item herald-author"><span class="vcard author"><span class="fn"><a href="http://math2it.com/author/dinhanhthi/">Đinh Anh Thi</a></span></span></div></div>
+			</div>
+
+
+</article>							<article class="herald-lay-i post-637 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-font-chu tag-footnote tag-latex tag-thu-thuat-latex">
+	
+
+			<div class="herald-post-thumbnail herald-format-icon-small">
+			<a href="http://math2it.com/thay-oi-kich-co-chu-cua-footnote-trong/" title="Thay đổi kích cỡ chữ của footnote trong LaTeX">
+				<img width="215" height="143" src="http://math2it.com/wp-content/uploads/2015/10/footnote-215x143.png" class="attachment-herald-lay-i size-herald-lay-i wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2015/10/footnote-215x143.png 215w, http://math2it.com/wp-content/uploads/2015/10/footnote-300x200.png 300w, http://math2it.com/wp-content/uploads/2015/10/footnote-414x276.png 414w, http://math2it.com/wp-content/uploads/2015/10/footnote-470x313.png 470w, http://math2it.com/wp-content/uploads/2015/10/footnote-640x426.png 640w, http://math2it.com/wp-content/uploads/2015/10/footnote-130x86.png 130w, http://math2it.com/wp-content/uploads/2015/10/footnote-187x124.png 187w" sizes="(max-width: 215px) 100vw, 215px" />							</a>
+		</div>
+	
+
+	<div class="entry-header">
+		
+		<h2 class="entry-title h6"><a href="http://math2it.com/thay-oi-kich-co-chu-cua-footnote-trong/">Thay đổi kích cỡ chữ của footnote trong LaTeX</a></h2>
+					<div class="entry-meta meta-small"><div class="meta-item herald-author"><span class="vcard author"><span class="fn"><a href="http://math2it.com/author/dinhanhthi/">Đinh Anh Thi</a></span></span></div></div>
+			</div>
+
+
+</article>							<article class="herald-lay-i post-4004 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-tex tag-thu-thuat-latex tag-tu-hoc-latex">
+	
+
+			<div class="herald-post-thumbnail herald-format-icon-small">
+			<a href="http://math2it.com/latex-16-viet-tai-lieu-lon-bang-cach-chia-thanh-nhieu-file-latex-nho-hon/" title="LaTeX 16 : Viết tài liệu lớn bằng cách chia thành nhiều file latex nhỏ hơn">
+				<img width="215" height="143" src="http://math2it.com/wp-content/uploads/2016/11/big-document-215x143.jpg" class="attachment-herald-lay-i size-herald-lay-i wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2016/11/big-document-215x143.jpg 215w, http://math2it.com/wp-content/uploads/2016/11/big-document-300x200.jpg 300w, http://math2it.com/wp-content/uploads/2016/11/big-document-414x276.jpg 414w, http://math2it.com/wp-content/uploads/2016/11/big-document-470x313.jpg 470w, http://math2it.com/wp-content/uploads/2016/11/big-document-640x426.jpg 640w, http://math2it.com/wp-content/uploads/2016/11/big-document-130x86.jpg 130w, http://math2it.com/wp-content/uploads/2016/11/big-document-187x124.jpg 187w" sizes="(max-width: 215px) 100vw, 215px" />							</a>
+		</div>
+	
+
+	<div class="entry-header">
+		
+		<h2 class="entry-title h6"><a href="http://math2it.com/latex-16-viet-tai-lieu-lon-bang-cach-chia-thanh-nhieu-file-latex-nho-hon/">LaTeX 16 : Viết tài liệu lớn bằng cách chia thành nhiều file latex nhỏ hơn</a></h2>
+					<div class="entry-meta meta-small"><div class="meta-item herald-author"><span class="vcard author"><span class="fn"><a href="http://math2it.com/author/math2it/">Math2IT</a></span></span></div></div>
+			</div>
+
+
+</article>								</div>
+</div>
+
+	<div id="author" class="herald-vertical-padding">
+	<div class="herald-mod-wrap"><div class="herald-mod-head "><div class="herald-mod-title"><h4 class="h6 herald-mod-h herald-color">Về tác giả</h4></div><div class="herald-mod-subnav"><a href="http://www.math2it.com" target="_blank" class="fa fa-link"></a><a href="https://www.facebook.com/Math2IT/" target="_blank" class="fa fa-facebook"></a><a href="https://plus.google.com/+Math2itblogspot" target="_blank" class="fa fa-google"></a><a href="https://www.youtube.com/user/math2it" target="_blank" class="fa fa-youtube"></a></div><div class="herald-mod-actions"><a href="http://math2it.com/author/math2it/">Xem tất cả bài đăng</a></div></div></div>
+	<div class="herald-author row">
+
+		<div class="herald-author-data col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			<img src="http://math2it.com/wp-content/uploads/2016/06/faviconVoice-150x150.png" width="140" height="140" alt="Math2IT" class="avatar avatar-140 wp-user-avatar wp-user-avatar-140 alignnone photo" />		</div>
+		
+		<div class="herald-data-content col-lg-10 col-md-10 col-sm-10 col-xs-10">
+			<h4 class="author-title">Math2IT</h4>
+			<p>Đây là tác giả chung cho các bài viết không do trực tiếp tác giả cụ thể nào của Math2IT viết. Có thể đó là các bài dịch từ các bài viết nước ngoài hoặc các bài viết thiên về kỹ thuật và thông báo.</p>
+		</div>
+
+	</div>
+
+
+</div>
+	
+<div id="disqus_thread"></div>
+
+			</div>
+
+		</div>
+
+</div>
+
+	
+
+	<div class="herald-sidebar col-lg-3 col-md-3 herald-sidebar-right">
+
+					<div id="categories-7" class="widget widget_categories"><h4 class="widget-title h6"><span>Chủ đề</span></h4>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://math2it.com/category/cai-khac/" ><span class="category-text">Cái khác</span><span class="count">21</span></a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://math2it.com/category/cong-cu/" title="Những thủ thuật, công cụ công nghệ hữu ích cho học tập, làm việc và cuộc sống."><span class="category-text">Công cụ</span><span class="count">43</span></a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://math2it.com/category/cong-nghe/" ><span class="category-text">Công nghệ</span><span class="count">112</span></a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://math2it.com/category/giao-duc/" title="Các phương pháp giáo dục hiện đại, các công cụ phục vụ cho giáo dục và giáo viên."><span class="category-text">Giáo dục</span><span class="count">39</span></a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://math2it.com/category/kham-pha/" ><span class="category-text">Khám phá</span><span class="count">33</span></a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://math2it.com/category/latex/" title="Tự học LaTeX từ cơ bản, tham khảo nhanh các thủ thuật hay về LaTeX."><span class="category-text">LaTeX</span><span class="count">65</span></a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://math2it.com/category/toan-hoc/" title="Hiểu toán học một cách trực quan, sinh động. Toán học với đời sống."><span class="category-text">Toán học</span><span class="count">46</span></a>
+</li>
+		</ul>
+</div><div id="herald_posts_widget-8" class="widget herald_posts_widget"><h4 class="widget-title h6"><span>Bài cùng chủ đề</span></h4>
+		
+		<div class="row ">
+
+							<article class="herald-lay-g post-4323 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-tex-editor tag-texiteasy">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/gioi-thieu-va-huong-dan-dung-phan-mem-texiteasy-de-go-latex/" title="Giới thiệu và hướng dẫn dùng phần mềm TeXitEasy để gõ LaTeX">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2017/05/1-74x55.png" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2017/05/1-74x55.png 74w, http://math2it.com/wp-content/uploads/2017/05/1-111x83.png 111w, http://math2it.com/wp-content/uploads/2017/05/1-215x161.png 215w, http://math2it.com/wp-content/uploads/2017/05/1-300x225.png 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/gioi-thieu-va-huong-dan-dung-phan-mem-texiteasy-de-go-latex/">Giới thiệu và hướng dẫn dùng phần mềm TeXitEasy để gõ LaTeX</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-4353 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-tikz tag-ve-latex tag-ve-trong-latex series-ve-hinh-voi-goi-tikz">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tikz-package-ky-2-ve-thi-va-su-dung-vong-lap-trong-tikz/" title="Tikz package &#8211; [Kỳ 2] Vẽ đồ thị và sử dụng vòng lặp trong TikZ">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2017/07/Tikz2-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2017/07/Tikz2-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2017/07/Tikz2-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2017/07/Tikz2-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2017/07/Tikz2-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tikz-package-ky-2-ve-thi-va-su-dung-vong-lap-trong-tikz/">Tikz package &#8211; [Kỳ 2] Vẽ đồ thị và sử dụng vòng lặp trong TikZ</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-615 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-ky-tu-dac-biet tag-latex">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/dau-ngoac-nhon-oi-va-dau-ngoac-vuong-oi/" title="Dấu ngoặc nhọn đôi và dấu ngoặc vuông đôi trong LaTeX">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2016/04/curly-braces-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2016/04/curly-braces-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2016/04/curly-braces-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2016/04/curly-braces-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2016/04/curly-braces-300x225.jpg 300w, http://math2it.com/wp-content/uploads/2016/04/curly-braces-459x332.jpg 459w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/dau-ngoac-nhon-oi-va-dau-ngoac-vuong-oi/">Dấu ngoặc nhọn đôi và dấu ngoặc vuông đôi trong LaTeX</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-955 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-tu-hoc-latex">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tu-hoc-latex-bai-1-latex-la-gi-the/" title="LaTeX 1 &#8211; LaTeX là gì thế?">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2014/08/what-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2014/08/what-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2014/08/what-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2014/08/what-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2014/08/what-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tu-hoc-latex-bai-1-latex-la-gi-the/">LaTeX 1 &#8211; LaTeX là gì thế?</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-4556 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-tikz tag-ve-latex tag-ve-trong-latex series-ve-hinh-voi-goi-tikz">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tikz-package-ky-3-node-va-mot-thu-thuat-huu-ich/" title="Tikz package &#8211; [Kỳ 3] Node và một số thủ thuật hữu ích">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2017/07/Tikz3-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2017/07/Tikz3-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2017/07/Tikz3-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2017/07/Tikz3-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2017/07/Tikz3-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tikz-package-ky-3-node-va-mot-thu-thuat-huu-ich/">Tikz package &#8211; [Kỳ 3] Node và một số thủ thuật hữu ích</a></h2>
+			</div>
+</div>
+
+</div>
+</article>			
+		</div>
+
+		
+		
+		</div><div id="herald_posts_widget-16" class="widget herald_posts_widget"><h4 class="widget-title h6"><span>Bài ngẫu nhiên</span></h4>
+		
+		<div class="row ">
+
+							<article class="herald-lay-g post-1024 post type-post status-publish format-standard has-post-thumbnail hentry category-toan-hoc tag-tai-lieu-toan tag-ebooks tag-giai-tich tag-giai-tich-ham tag-giai-tich-so tag-tai-lieu tag-toan-cao-cap tag-toan-hoc">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tuyen-tap-tai-lieu-giai-tich-ham/" title="Tuyển tập tài liệu giải tích hàm (Functional Analysis)">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2014/06/dosach-74x55.png" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2014/06/dosach-74x55.png 74w, http://math2it.com/wp-content/uploads/2014/06/dosach-111x83.png 111w, http://math2it.com/wp-content/uploads/2014/06/dosach-215x161.png 215w, http://math2it.com/wp-content/uploads/2014/06/dosach-300x225.png 300w, http://math2it.com/wp-content/uploads/2014/06/dosach-550x400.png 550w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+					<span class="meta-category meta-small"><a href="http://math2it.com/category/toan-hoc/" class="herald-cat-5">Toán học</a></span>
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tuyen-tap-tai-lieu-giai-tich-ham/">Tuyển tập tài liệu giải tích hàm (Functional Analysis)</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-712 post type-post status-publish format-standard has-post-thumbnail hentry category-cong-nghe tag-cong-nghe tag-elementary-os tag-linux tag-linux-mint tag-phan-mem tag-touchpad tag-ubuntu">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tu-ong-tat-touchpad-khi-ang-go-phim/" title="Tự động tắt touchpad khi đang gõ phím trong Ubuntu">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2015/05/touchpad-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2015/05/touchpad-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2015/05/touchpad-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2015/05/touchpad-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2015/05/touchpad-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+					<span class="meta-category meta-small"><a href="http://math2it.com/category/cong-nghe/" class="herald-cat-7">Công nghệ</a></span>
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tu-ong-tat-touchpad-khi-ang-go-phim/">Tự động tắt touchpad khi đang gõ phím trong Ubuntu</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-721 post type-post status-publish format-standard has-post-thumbnail hentry category-cong-cu tag-cong-cu tag-cong-nghe tag-diary tag-gmail tag-link-hay tag-nhat-ky tag-thu-thuat">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/dung-gmail-e-viet-nhat-ky-tai-sao-khong/" title="Dùng Gmail để viết nhật ký &#8211; tại sao không?">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2015/05/dairy-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2015/05/dairy-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2015/05/dairy-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2015/05/dairy-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2015/05/dairy-300x225.jpg 300w, http://math2it.com/wp-content/uploads/2015/05/dairy-559x426.jpg 559w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+					<span class="meta-category meta-small"><a href="http://math2it.com/category/cong-cu/" class="herald-cat-10">Công cụ</a></span>
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/dung-gmail-e-viet-nhat-ky-tai-sao-khong/">Dùng Gmail để viết nhật ký &#8211; tại sao không?</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-3811 post type-post status-publish format-standard has-post-thumbnail hentry category-cong-cu category-cong-nghe tag-cong-cu tag-evernote tag-ghi-chu tag-latex tag-markdown tag-thiet-ke-web">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/cach-lam-mot-trang-web-ghi-chu-don-gian/" title="Cách làm một trang web ghi chú đơn giản">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2016/10/note-taking-1024x655-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2016/10/note-taking-1024x655-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2016/10/note-taking-1024x655-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2016/10/note-taking-1024x655-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2016/10/note-taking-1024x655-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+					<span class="meta-category meta-small"><a href="http://math2it.com/category/cong-cu/" class="herald-cat-10">Công cụ</a> <span>&bull;</span> <a href="http://math2it.com/category/cong-nghe/" class="herald-cat-7">Công nghệ</a></span>
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/cach-lam-mot-trang-web-ghi-chu-don-gian/">Cách làm một trang web ghi chú đơn giản</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-617 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-geogebra tag-latex tag-loi-latex tag-tex-cho-toan tag-tex-chuyen-nganh tag-tex-editor tag-thu-thuat-latex tag-tu-hoc-latex tag-ve-trong-latex tag-xfig">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tu-hoc-latex-bai-tong-hop/" title="Tự học LaTeX từ A-Z">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2016/04/tuhoclatex-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2016/04/tuhoclatex-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2016/04/tuhoclatex-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2016/04/tuhoclatex-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2016/04/tuhoclatex-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+					<span class="meta-category meta-small"><a href="http://math2it.com/category/latex/" class="herald-cat-9">LaTeX</a></span>
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tu-hoc-latex-bai-tong-hop/">Tự học LaTeX từ A-Z</a></h2>
+			</div>
+</div>
+
+</div>
+</article>			
+		</div>
+
+		
+		
+		</div>		
+					<div class="herald-sticky">
+				<div id="text-10" class="widget widget_text">			<div class="textwidget"><div id="fb-root"></div>
+<p><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=1535485240092767";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></p>
+<div class="fb-page" data-href="https://www.facebook.com/Math2it/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"></div>
+</div>
+		</div><div id="herald_posts_widget-17" class="widget herald_posts_widget"><h4 class="widget-title h6"><span>Có thể bạn thích?</span></h4>
+		
+		<div class="row ">
+
+							<article class="herald-lay-g post-3930 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-hoi-dap-tex tag-latex tag-loi-latex tag-muc-luc tag-tex">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/to-dam-in-nghieng-hoac-bo-chung-di-o-cac-phan-trong-muc-luc-latex/" title="Tô đậm, in nghiêng hoặc bỏ chúng đi ở các phần trong mục lục LaTeX">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2015/10/toc-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2015/10/toc-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2015/10/toc-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2015/10/toc-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2015/10/toc-300x225.jpg 300w, http://math2it.com/wp-content/uploads/2015/10/toc-550x409.jpg 550w, http://math2it.com/wp-content/uploads/2015/10/toc-559x409.jpg 559w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/to-dam-in-nghieng-hoac-bo-chung-di-o-cac-phan-trong-muc-luc-latex/">Tô đậm, in nghiêng hoặc bỏ chúng đi ở các phần trong mục lục LaTeX</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-923 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-ky-tu-dac-biet tag-latex tag-loi-latex tag-tex-cho-toan tag-thu-thuat-latex tag-van-ban">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/nhung-loi-latex-thuong-gap-nhat/" title="Những lỗi LaTeX thường gặp nhất">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2014/10/error-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2014/10/error-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2014/10/error-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2014/10/error-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2014/10/error-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/nhung-loi-latex-thuong-gap-nhat/">Những lỗi LaTeX thường gặp nhất</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-698 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-latex tag-loi-latex tag-thu-thuat-latex">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/dung-label-va-ref-nhung-tro-en-sai-ia/" title="Dùng label và ref nhưng trỏ đến sai địa chỉ trong LaTeX">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2015/05/ref-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2015/05/ref-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2015/05/ref-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2015/05/ref-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2015/05/ref-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/dung-label-va-ref-nhung-tro-en-sai-ia/">Dùng label và ref nhưng trỏ đến sai địa chỉ trong LaTeX</a></h2>
+			</div>
+</div>
+
+</div>
+</article>							<article class="herald-lay-g post-4566 post type-post status-publish format-standard has-post-thumbnail hentry category-latex tag-tikz tag-ve-latex tag-ve-trong-latex series-ve-hinh-voi-goi-tikz">
+<div class="row">	
+		
+		<div class="col-lg-4 col-xs-3">
+		<div class="herald-post-thumbnail">
+			<a href="http://math2it.com/tikz-package-ky-4-thuc-hanh-tikz-qua-hinh-ve-thuc-te/" title="Tikz package &#8211; [Kỳ 4] Thực hành TikZ qua hình vẽ thực tế">
+				<img width="74" height="55" src="http://math2it.com/wp-content/uploads/2017/07/Tikz4-74x55.jpg" class="attachment-herald-lay-g1 size-herald-lay-g1 wp-post-image" alt="" srcset="http://math2it.com/wp-content/uploads/2017/07/Tikz4-74x55.jpg 74w, http://math2it.com/wp-content/uploads/2017/07/Tikz4-111x83.jpg 111w, http://math2it.com/wp-content/uploads/2017/07/Tikz4-215x161.jpg 215w, http://math2it.com/wp-content/uploads/2017/07/Tikz4-300x225.jpg 300w" sizes="(max-width: 74px) 100vw, 74px" />			</a>
+		</div>
+	</div>
+		
+<div class="col-lg-8 col-xs-9 herald-no-pad">
+	<div class="entry-header">
+		
+		<h2 class="entry-title h7"><a href="http://math2it.com/tikz-package-ky-4-thuc-hanh-tikz-qua-hinh-ve-thuc-te/">Tikz package &#8211; [Kỳ 4] Thực hành TikZ qua hình vẽ thực tế</a></h2>
+			</div>
+</div>
+
+</div>
+</article>			
+		</div>
+
+		
+		
+		</div>			</div>
+		
+	</div>
+
+
+			</div>	
+		</article>
+	</div>
+
+
+	</div>
+
+	
+	<footer id="footer" class="herald-site-footer herald-slide">
+
+		
+					<div class="footer-bottom">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			
+									<div class="hel-l herald-go-hor">
+									<div class="herald-copyright">Copyright &copy; 2016. Created by <a href="http://math2it.com" target="_blank">Math2IT</a>.</div>							</div>
+			
+									<div class="hel-r herald-go-hor">
+									<nav class="secondary-navigation herald-menu">	
+		<ul id="menu-herald-secondary-1" class="menu"><li id="menu-item-3379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3379"><a href="http://math2it.com/tham-gia-viet-bai/">Tham gia viết bài</a></li>
+<li id="menu-item-3380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3380"><a href="http://math2it.com/gioi-thieu/">Giới thiệu</a></li>
+<li id="menu-item-3381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3381"><a href="http://math2it.com/contact/">Liên hệ</a></li>
+</ul></nav>
+							</div>
+			
+									<div class="hel-c herald-go-hor">
+											<ul id="menu-herald-social-1" class="herald-soc-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3163"><a href="https://www.facebook.com/math2it"><span class="herald-social-name">Facebook</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3220"><a href="https://plus.google.com/u/0/+Math2itblogspot"><span class="herald-social-name">Google+</span></a></li>
+</ul>							</div>
+			
+		</div>
+	</div>
+</div>
+</div>	    
+	</footer>
+
+	
+
+				<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) {
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://math2it.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<script type="text/javascript">/* <![CDATA[ */ jQuery(document).ready( function() { jQuery.post( "http://math2it.com/wp-admin/admin-ajax.php", { action : "entry_views", _ajax_nonce : "d8739cdb37", post_id : 4841 } ); } ); /* ]]> */</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/math2it.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+var CrayonTagEditorSettings = {"home_url":"http:\/\/math2it.com","css":"crayon-te","css_selected":"crayon-selected","code_css":"#crayon-code","url_css":"#crayon-url","url_info_css":"#crayon-te-url-info","lang_css":"#crayon-lang","title_css":"#crayon-title","mark_css":"#crayon-mark","range_css":"#crayon-range","inline_css":"crayon-inline","inline_hide_css":"crayon-hide-inline","inline_hide_only_css":"crayon-hide-inline-only","hl_css":"#crayon-highlight","switch_html":"#content-html","switch_tmce":"#content-tmce","tinymce_button_generic":".mce-btn","tinymce_button":"a.mce_crayon_tinymce,.mce-i-crayon_tinymce","tinymce_button_unique":"mce_crayon_tinymce","tinymce_highlight":"mce-active","submit_css":"#crayon-te-ok","cancel_css":"#crayon-te-cancel","content_css":"#crayon-te-content","dialog_title_css":"#crayon-te-title","submit_wrapper_css":"#crayon-te-submit-wrapper","data_value":"data-value","attr_sep":":","css_sep":"_","fallback_lang":"tex","add_text":"Add Code","edit_text":"Edit Code","quicktag_text":"crayon","submit_add":"Add","submit_edit":"Save","bar":"#crayon-te-bar","bar_content":"#crayon-te-bar-content","extensions":{"scpt":"applescript","applescript":"applescript","swf":"as","fla":"as","cs":"c#","h":"c++","hh":"c++","hpp":"c++","hxx":"c++","h++":"c++","cc":"c++","cpp":"c++","cxx":"c++","c++":"c++","pas":"delphi","java":"java","class":"java","jar":"java","mel":"mel","ma":"mel","mv":"miva","mvc":"miva","mvt":"miva","m":"objc","mm":"objc","psc":"papyrus","pl":"perl","py":"python","pyw":"python","pyc":"python","pyo":"python","pyd":"python","rb":"ruby","rbx":"ruby","rhtml":"ruby","vbs":"vb"}};
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/math2it.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/math2it.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"H\u00e3y x\u00e1c nh\u1eadn r\u1eb1ng b\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"math2it-com"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.15"},"disqusIdentifier":"4841 http:\/\/math2it.com\/?p=4841","disqusShortname":"math2it-com","disqusTitle":"Th\u1ee7 thu\u1eadt hay cho ng\u01b0\u1eddi vi\u1ebft lu\u1eadn v\u0103n v\u00e0 s\u00e1ch b\u1eb1ng LaTeX","disqusUrl":"http:\/\/math2it.com\/thu-thuat-hay-cho-nguoi-viet-luan-van-va-sach-bang-latex\/","postId":"4841"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"hi\u1ec7n","visibility_hide":"\u1ea9n","visibility_hide_by_default":"1","width":"40%"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var herald_js_settings = {"ajax_url":"http:\/\/math2it.com\/wp-admin\/admin-ajax.php","rtl_mode":"false","header_sticky":"1","header_sticky_offset":"200","header_sticky_up":"","single_sticky_bar":"","popup_img":"1","logo":"http:\/\/math2it.com\/wp-content\/uploads\/2016\/06\/logoHerald50t.png","logo_retina":"http:\/\/math2it.com\/wp-content\/uploads\/2016\/06\/logoHerald100t.png","logo_mini":"http:\/\/math2it.com\/wp-content\/uploads\/2016\/06\/logoHerald32.png","logo_mini_retina":"http:\/\/math2it.com\/wp-content\/uploads\/2016\/06\/logoHerald64.png","smooth_scroll":"","trending_columns":"6"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://math2it.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.te.min.js,wp-content/plugins/contact-form-7/includes/js/scripts.js,wp-content/plugins/disqus-comment-system/public/js/comment_count.js,wp-content/plugins/disqus-comment-system/public/js/comment_embed.js,wp-content/plugins/table-of-contents-plus/front.min.js,wp-includes/js/comment-reply.min.js,wp-content/themes/herald/assets/js/min.js,wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js,wp-includes/js/wp-embed.min.js'></script>
+
+<!-- Shortcodes Ultimate custom CSS - start -->
+<style type="text/css">
+.marginB20{
+	margin-bottom: 20px;
+}
+</style>
+<!-- Shortcodes Ultimate custom CSS - end -->
+
+</body>
+</html>
